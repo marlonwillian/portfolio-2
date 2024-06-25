@@ -8,7 +8,7 @@ function Home() {
     <section className={styles.homeSection}>
       <Header/>
       <Container>
-        {/* conteúdo */}
+        <span>Container</span>
       </Container>
       <Footer/>
     </section>
