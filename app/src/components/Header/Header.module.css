@@ -4,17 +4,15 @@
   color: white;
   top: 0;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 40px;
   font-size: 25px;
-}
-
-.headerItens {
   display: flex;
+  justify-content: space-between;
 }
 
 .leftItens {
   display: flex;
-  margin-left: 30px;
+  margin-left: 200px;
 }
 
 .pageSections {
@@ -24,12 +22,12 @@
 }
 
 .showMenu {
-  height: 170px;
+  height: 185px;
   transition: 0.5s;
 }
 
 .hideMenu {
-  height: 90px;
+  height: 105px;
   transition: 0.5s;
 }
 
@@ -42,12 +40,45 @@
 .leftItens i {
   margin-top: 4px;
   cursor: pointer;
+  max-height: 26px;
 } 
 
 .line {
   border: 1px solid #fffdfd8d;
   margin-left: 20px;
   margin-right: 20px;
-  box-shadow: 1px 1px 10px white;
+  box-shadow: 0px 0px 5px white;
   max-height: 35px;
+}
+
+.rightItens {
+  display: flex;
+  margin-right: 200px;
+  gap: 30px;
+  transition: 0.5s;
+  max-height: 26px;
+}
+
+.rightItens a {
+  color: #8179d0;
+}
+
+@media (width <= 850px) {
+  .leftItens {
+    margin-left: 50px;
+  }
+
+  .rightItens {
+    margin-right: 50px;
+  }
+}
+
+@media (width <= 400px) {
+  .leftItens {
+    margin-left: 20px;
+  }
+
+  .rightItens {
+    margin-right: 30px;
+  }
 }
