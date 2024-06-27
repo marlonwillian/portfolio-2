@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  background-color: #0e0c1d;
+  background-color: #021026;
   color: white;
   top: 0;
   width: 100%;
@@ -13,6 +13,32 @@
 .leftItens {
   display: flex;
   margin-left: 200px;
+}
+
+/* @keyframes section-animation {
+  from {
+    translate: ;
+    opacity: 1;
+  }
+  to {
+    
+    opacity: 0;
+  }
+} */
+
+.mainSection {
+  transition: transform 0.1s ease, opacity 0.1s ease;
+  opacity: 1;
+}
+
+.up {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.down {
+  transform: translateY(0%);
+  opacity: 1;
 }
 
 .pageSections {
@@ -60,7 +86,7 @@
 }
 
 .rightItens a {
-  color: #8179d0;
+  color: #766cd0;
 }
 
 @media (width <= 850px) {
@@ -75,7 +101,7 @@
 
 @media (width <= 400px) {
   .leftItens {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 
   .rightItens {

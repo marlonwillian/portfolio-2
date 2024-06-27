@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
 import { useEffect, useState } from "react";
 
-function Header() {
+function Header({section, scrollY}) {
 
   const [menu, setMenu] = useState(false)
 
@@ -23,6 +23,8 @@ function Header() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  console.log(scrollY)
+
   return (
     <header
       className={`
@@ -30,14 +32,15 @@ function Header() {
         ${menu ? styles.showMenu : styles.hideMenu}`
       }
       style={{
-        flexDirection: windowSize.width <= 460 && menu? "column" : "", 
-        height: windowSize.width <= 460 && menu? "225px" : ""
+        flexDirection: windowSize.width <= 460 && menu? "column" : "",
+        height: windowSize.width <= 460 && menu? "225px" : "",
+        alignItems: windowSize.width <= 460 && menu ? "center" : ""
       }}
     >
       <nav 
         className={styles.leftItens}
         style={{
-          marginLeft: windowSize.width <= 460 && menu? "125px" : "",
+          marginLeft: windowSize.width <= 460 && menu? "0px" : "",
         }}
       >
         <i
@@ -48,7 +51,16 @@ function Header() {
         <div
           className={styles.pageSections}
         >
-          <span className={styles.mainSection}>Início</span>
+          <span 
+            className={`
+              ${styles.mainSection} 
+              ${scrollY == 400 || scrollY == 729 ? 
+                styles.up : scrollY > 400 || scrollY > 729 ? styles.down : ""
+              }
+            `}
+          >
+            { section }
+          </span>
           <span
             className={styles.otherSections}
             style={{ opacity: !menu ? "0" : "1", cursor: !menu ? "default" : "pointer" }}>
@@ -69,7 +81,8 @@ function Header() {
           !menu && windowSize.width > 460? "0px": 
           !menu && windowSize.width <= 460? "0px": 
           menu && windowSize.width <= 460 && windowSize.height <= 650 ? "0px" : "0px", 
-          marginLeft: windowSize.width <= 460 && menu? "150px" : "",
+          marginLeft: windowSize.width <= 460 && menu? "0px" : "",
+          marginRight: windowSize.width <= 460 && menu? "0px" : "",
           marginBottom: menu && windowSize.width <= 460 && windowSize.height <= 650 ? "20px" : "20px", 
         }}
       >
