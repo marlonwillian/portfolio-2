@@ -23,7 +23,11 @@ function Header({section, scrollY}) {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  console.log(scrollY)
+  const sections = {
+    "Início": ["Sobre Mim", "Projetos"],
+    "Sobre Mim": ["Início", "Projetos"],
+    "Projetos": ["Início", "Sobre Mim"],
+  }
 
   return (
     <header
@@ -55,7 +59,7 @@ function Header({section, scrollY}) {
             className={`
               ${styles.mainSection} 
               ${scrollY == 400 || scrollY == 729 ? 
-                styles.up : scrollY > 400 || scrollY > 729 ? styles.down : ""
+                styles.up :  ""
               }
             `}
           >
@@ -64,12 +68,12 @@ function Header({section, scrollY}) {
           <span
             className={styles.otherSections}
             style={{ opacity: !menu ? "0" : "1", cursor: !menu ? "default" : "pointer" }}>
-            Sobre Mim
+            { sections[section][0] }
           </span>
           <span
             className={styles.otherSections}
             style={{ opacity: !menu ? "0" : "1", cursor: !menu ? "default" : "pointer" }}>
-            Projetos
+            { sections[section][1] }
           </span>
         </div>
       </nav>

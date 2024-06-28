@@ -13,6 +13,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #021026;
+}
+
+body::-webkit-scrollbar-track {
+  background: #021026;
+  border-left: 3px solid #070610;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #070610;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
 }

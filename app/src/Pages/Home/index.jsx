@@ -2,6 +2,7 @@ import Header from "../../components/Header";
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 import styles from "./Home.module.css";
+import eu from "./img/eu.png";
 import { useEffect, useState } from "react";
 
 function Home() {
@@ -35,8 +36,13 @@ function Home() {
     <section className={styles.homeSection}>
       <Header section={section} scrollY={scrollY}/>
       <Container>
-        <div className={styles.home}>
-          <span>Marlon Willian Silva Barros</span>
+        <div className={styles.start}>
+          <div className={styles.divImg}>
+            <img src={eu} alt="eu"/>
+          </div>
+          <div className={styles.divInfo}>
+            <span>Marlon Willian Silva Barros</span>
+          </div>
         </div>
         <div className={styles.about}>
           <span>Sobre Mim</span>
