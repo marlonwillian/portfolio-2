@@ -58,7 +58,7 @@ function Header({section, scrollY}) {
           <span 
             className={`
               ${styles.mainSection} 
-              ${scrollY == 400 || scrollY == 729 ? 
+              ${scrollY == 700 || scrollY == 729 ? 
                 styles.up :  ""
               }
             `}

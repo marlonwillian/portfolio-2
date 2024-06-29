@@ -76,7 +76,7 @@
 }
 
 .rightItens a {
-  color: rgb(56, 102, 202);
+  color: #3866ca;
 }
 
 @media (width <= 850px) {
@@ -92,6 +92,13 @@
 @media (width <= 500px) {
   .up {
     animation: none;
+  }
+}
+
+@media (width <= 445px) {
+  .pageSections span{
+    font-size: 23px;
+    margin-top: 5px;
   }
 }
 
