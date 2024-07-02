@@ -64,7 +64,6 @@ section > div {
 
 .divInfo hr {
   width: 450px;
-  background-color: #ffffff5d;
   border-color: #ffffffae;
   border-radius: 50px;
 }
@@ -91,6 +90,127 @@ section > div {
   display: grid;
   font-size: 20px;
   font-weight: 500;
+}
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-width: 5px;
+}
+
+.aboutText {
+  max-width: 450px;
+  text-align: left;
+  word-break: break-word;
+  line-height: 1.5;
+  font-size: 25px;
+  font-weight: 100;
+  border: 5px solid;
+  border-image: linear-gradient(to left top, #070610 20%, #021026 30%, #021026 50%, #021026 70%, #070610 80%) 100;
+  padding: 30px;
+}
+
+.aboutCourses {
+  background-color: #070610;
+  height: 485px;
+  width: 500px;
+  padding: 30px;
+  border: 2px solid #ffffff3a;
+  text-align: -webkit-center;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.aboutCourses::-webkit-scrollbar {
+  width: 12px;
+  background-color: #070610;
+}
+
+.aboutCourses::-webkit-scrollbar-track {
+  background: #070610;
+  border-left: 3px solid #070610;
+}
+
+.aboutCourses::-webkit-scrollbar-thumb {
+  background-color: #021026;
+}
+
+.aboutCourses h1 {
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.aboutCourses hr {
+  width: 250px;
+  border: 1px solid #ffffff3a;
+  margin-bottom: 50px;
+}
+
+.course {
+  background-color: #021026;
+  padding: 30px;
+  margin-bottom: 5px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.courseInfo h2, h3, h4 {
+  font-weight: 100;
+}
+
+.courseInfo h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.courseInfo h3 {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.divButton {
+  text-align: right;
+}
+
+.certificateButton {
+  border: none;
+  padding: 15px;
+  background-color: #070610;
+}
+
+.certificateButton span, i {
+  color: white;
+}
+
+.certificateButton span {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.certificateButton i {
+  font-size: 10px;
+}
+
+.allTecnologies {
+  display: flex;
+  height: 550px;
+}
+
+.allTecnologies hr {
+  border: 1px solid #ffffff3a;
+  margin-left: -65px;
+  margin-right: 50px;
+}
+
+.allTecnologies div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 25px;
 }
 
 @media (width <= 1087px) {
