@@ -5,6 +5,7 @@ import About from "../../components/About";
 import Footer from "../../components/Footer";
 import styles from "./Home.module.css";
 import { useEffect, useState } from "react";
+import Projects from "../../components/Projects";
 
 function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -39,9 +40,7 @@ function Home() {
       <Container>
         <Start/>
         <About/>
-        <div className={styles.projects}>
-          <span>Projetos</span>
-        </div>
+        <Projects/>
       </Container>
       <Footer />
     </section>

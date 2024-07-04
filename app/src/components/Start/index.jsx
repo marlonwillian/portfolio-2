@@ -1,12 +1,12 @@
 import styles from "./Start.module.css";
-import eu from "./img/eu.png";
+import euhd from "./img/eu-hd.png";
 
 function Start() {
   return (
-    <div className={styles.start}>
+    <section className={styles.start}>
       <div className={styles.divImg}>
-        <img src={eu} alt="marlon foto" className={styles.img1} />
-        <img src={eu} alt="marlon foto" className={styles.img2} />
+        <img src={euhd} alt="marlon foto" className={styles.img1} />
+        <img src={euhd} alt="marlon foto" className={styles.img2} />
       </div>
       <div className={styles.divInfo}>
         <h1>Marlon Willian Silva Barros</h1>
@@ -20,7 +20,7 @@ function Start() {
           <span><i class="fa-brands fa-react" style={{ color: "#66dbfb" }}></i>React JS</span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
