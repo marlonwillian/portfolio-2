@@ -17,8 +17,10 @@
   line-height: 1.5;
   font-size: 25px;
   font-weight: 100;
-  border: 5px solid;
-  border-image: linear-gradient(to left top, #070610 20%, #021026 30%, #021026 50%, #021026 70%, #070610 80%) 100;
+  background: linear-gradient(to right bottom, #070620 10%, #070610 50%, #070620 80%);
+  border: 1px solid;
+  border-image: linear-gradient(to left top, #ffffff 20%, #021026 30%, #021026 50%, #021026 70%, #ffffff 80%) 100;
+  border-radius: 5px;
   padding-inline: 50px;
 }
 
@@ -36,8 +38,8 @@
 }
 
 .allTecnologies hr {
-  border: 2px solid;
-  border-image: linear-gradient(to bottom, transparent 35%, #070610 100%, transparent 0%) 1;
+  border: 1px solid;
+  border-image: linear-gradient(to bottom, transparent 35%, #ffffff 100%, transparent 0%) 1;
   margin-inline: 50px;
 }
 
