@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "github": "https://github.com/marlonwillian/loja-de-jogos-react", 
+    "site": "https://loja-de-jogos-react.vercel.app", 
+    "img": "https://marlonwillian.github.io/Portfolio/img/lojadejogos.png",
+    "project": "Loja de jogos",
+    "tecnologies": ["HTML", "CSS3", "React JS", "Bootstrap", "JSON"],
+    "year": ["2024"],
+    "description": "A Loja de Jogos é um projeto que utiliza React, Bootstrap e o Context API para simular uma plataforma de compra de jogos. Utiliza também o formato JSON para armazenar os jogos e suas informações, além de integrar o React Router para gerenciar as rotas do aplicativo."
+  },
+  {
+    "id": 1,
+    "github": "https://github.com/marlonwillian/criador-de-carta",
+    "site": "https://marlonwillian.github.io/criador-de-carta/geradordecarta/index.html",
+    "img": "https://marlonwillian.github.io/Portfolio/img/gerador.png",
+    "project": "Gerador de cartas",
+    "tecnologies": ["HTML", "CSS3", "Java Script"],
+    "year": ["2023"],
+    "description": "Criador de Cartas é um projeto utilizando HTML, CSS e Java Script que permite criar cartas personalizadas de jogadores de futebol, inspiradas no estilo visual dos jogos FIFA/FC. Esta aplicação proporciona a personalização de diversos elementos, como jogadores, times, posições e estatísticas."
+  }
+]
