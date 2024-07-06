@@ -4,12 +4,6 @@
   height: 900px;
   margin-bottom: 2.5rem;
   display: flex;
-  align-items: center;
-}
-
-.divCards {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
-  gap: 50px;
 }

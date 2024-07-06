@@ -1,0 +1,25 @@
+.slick-prev {
+  z-index: 1;
+}
+
+.slick-next {
+  position: absolute;
+  right: 40px
+}
+
+.slick-prev::before, .slick-next::before {
+  font-size: 30px;
+  position: absolute;
+}
+
+.slick-prev::before {
+  transform: translateX(450px);
+}
+
+.slick-next::before {
+  transform: translateX(-415px);
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+}

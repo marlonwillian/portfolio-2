@@ -1,25 +1,26 @@
 import styles from "./Projects.module.css";
 import project from "../../json/projects.json";
 import ProjectCard from "../ProjectCard";
- 
+import Carousel from "../Carousel";
+
 function Projects() {
   return (
     <section className={styles.projects}>
-      <div className={styles.divCards}>
+      <Carousel>
         {
-          project.map((project) => 
+          project.map((project) =>
             <ProjectCard
               img={project.img}
               project={project.project}
               year={project.year}
               tecnologies={project.tecnologies}
+              description={project.description}
               github={project.github}
               site={project.site}
-              description={project.description}
             />
           )
         }
-      </div>
+      </Carousel>
     </section>
   );
 }

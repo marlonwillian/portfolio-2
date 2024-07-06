@@ -6,6 +6,7 @@
   height: 500px;
   font-size: 30px;
   overflow: hidden;
+  margin: auto auto 50px;
 }
 
 .cardImg {
