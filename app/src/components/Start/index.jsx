@@ -3,7 +3,7 @@ import euhd from "./img/eu-hd.png";
 
 function Start() {
   return (
-    <section className={styles.start}>
+    <section className={styles.start} id="Início">
       <div className={styles.divImg}>
         <img src={euhd} alt="marlon foto" className={styles.img1} />
         <img src={euhd} alt="marlon foto" className={styles.img2} />

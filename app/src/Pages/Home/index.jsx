@@ -25,12 +25,14 @@ function Home() {
   function getSections() {
     if (scrollY < 700 ) {
       return "Início"
-    } else if (scrollY >= 700 && scrollY < 1400) {
+    } else if (scrollY >= 700 && scrollY < 1600) {
       return "Sobre Mim"
     } else {
       return "Projetos"
     }
   };
+
+  console.log(scrollY)
 
   let section = getSections();
 

@@ -5,7 +5,7 @@ import Carousel from "../Carousel";
 
 function Projects() {
   return (
-    <section className={styles.projects}>
+    <section className={styles.projects} id="Projetos">
       <Carousel>
         {
           project.map((project) =>

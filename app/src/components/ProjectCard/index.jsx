@@ -1,7 +1,7 @@
 import styles from "./ProjectCard.module.css";
 import { useState } from "react";
 
-function ProjectCard({img, project, year, tecnologies, github, site, description}) {  
+function ProjectCard({ img, project, year, tecnologies, github, site, description }) {
   const [tab, setTab] = useState(1);
 
   return (
@@ -13,20 +13,20 @@ function ProjectCard({img, project, year, tecnologies, github, site, description
         <div className={styles.tabs}>
           <span
             className={`
-                  ${styles.tab1} 
-                  ${tab == 1 ? styles.selectedTab : ""}
-                  ${tab == 2 ? styles.tabAnimation : ""}
-                `}
+              ${styles.tab1} 
+              ${tab == 1 ? styles.selectedTab : ""}
+              ${tab == 2 ? styles.tabAnimation : ""}
+            `}
             onClick={() => setTab(1)}
           >
             Informações
           </span>
           <span
             className={`
-                  ${styles.tab2} 
-                  ${tab == 2 ? styles.selectedTab : ""}
-                  ${tab == 1 ? styles.tabAnimation : ""}
-                `}
+              ${styles.tab2} 
+              ${tab == 2 ? styles.selectedTab : ""}
+              ${tab == 1 ? styles.tabAnimation : ""}
+            `}
             onClick={() => setTab(2)}
           >
             Descrição
@@ -39,10 +39,10 @@ function ProjectCard({img, project, year, tecnologies, github, site, description
           <h1>{project}<span>{year}</span></h1>
           <h2>
             {
-              tecnologies.map((tecnology, index) => 
-                <span 
+              tecnologies.map((tecnology, index) =>
+                <span
                   className={styles.tecnology}
-                  style={{marginLeft: index == 0 ? "0px" : ""}}
+                  style={{ marginLeft: index == 0 ? "0px" : "" }}
                 >
                   {tecnology}
                 </span>

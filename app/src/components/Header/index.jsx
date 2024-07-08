@@ -58,23 +58,29 @@ function Header({section, scrollY}) {
           <span 
             className={`
               ${styles.mainSection} 
-              ${scrollY == 700 || scrollY == 729 ? 
-                styles.up :  ""
-              }
+              ${scrollY == 700 || scrollY == 1600 ? styles.up :  ""}
             `}
           >
             { section }
           </span>
-          <span
-            className={styles.otherSections}
-            style={{ opacity: !menu ? "0" : "1", cursor: !menu ? "default" : "pointer" }}>
-            { sections[section][0] }
-          </span>
-          <span
-            className={styles.otherSections}
-            style={{ opacity: !menu ? "0" : "1", cursor: !menu ? "default" : "pointer" }}>
-            { sections[section][1] }
-          </span>
+          <a href={`#${sections[section][0]}`}>
+            <span
+              className={styles.otherSections}
+              style={{ opacity: !menu ? "0" : "1", cursor: !menu ? "default" : "pointer" }}
+              onClick={() => setMenu(!menu)}
+            >
+              { sections[section][0] }
+            </span>
+          </a>
+          <a href={`#${sections[section][1]}`}>
+            <span
+              className={styles.otherSections}
+              style={{ opacity: !menu ? "0" : "1", cursor: !menu ? "default" : "pointer" }}
+              onClick={() => setMenu(!menu)}
+            >
+              { sections[section][1] }
+            </span>
+          </a>
         </div>
       </nav>
       <nav
