@@ -4,7 +4,7 @@ function About() {
   return (
     <section className={styles.about} id="Sobre Mim">
       <div className={styles.aboutText}>
-        <span>Desde 2022, venho me dedicando ao estudo de programação,no desenvolvimento front-end, utilizando tecnologias comoHTML, CSS, JavaScript, React e NextJS com principais. Alémdisso, possuo conhecimentos básicos no Back-End, com NodeJS, SQL e MongoDB.</span>
+        <span>Desde 2022, venho me dedicando ao estudo de programação,no desenvolvimento front-end, utilizando tecnologias como HTML, CSS, JavaScript, React e NextJS com principais. Alémdisso, possuo conhecimentos básicos no Back-End, com NodeJS, SQL e MongoDB.</span>
         <div className={styles.allTecnologies}>
           <hr/>
           <div className={styles.tecnologiesLogo}>
