@@ -43,12 +43,24 @@
   margin-inline: 50px;
 }
 
-.allTecnologies div {
+.tecnologiesLogo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 45px;
   font-size: 25px;
+}
+
+.tecnologiesLogo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tecnologiesLogo div span {
+  font-size: 13px;
+  margin-top: 15px;
 }
 
 @media (width <= 540px) {
